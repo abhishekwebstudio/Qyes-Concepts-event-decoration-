@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Qyes Concepts | Event Decoration in Delhi & Gurugram</title>
 
-    <meta name="description"
-          content="Qyes Concepts provides professional wedding, birthday, festival, corporate and private event decoration services in Delhi, Gurugram and nearby areas.">
+    <meta name="description" content="Qyes Concepts provides professional event decoration in Delhi, Gurugram and nearby areas. Birthday, wedding, festival, corporate and private event decoration.">
 
-    <meta name="keywords"
-          content="event decoration Delhi, event decoration Gurugram, wedding decoration Delhi, birthday decoration Delhi, festival event decoration, corporate event decoration, private party decoration, Qyes Concepts">
+    <meta name="keywords" content="event decoration Delhi, event decorator Delhi, wedding decoration Delhi, birthday decoration Delhi, corporate event decoration Delhi, event decoration Gurugram, wedding decorator Gurugram, Qyes Concepts">
+
+    <meta name="author" content="Qyes Concepts">
 
     <meta name="robots" content="index, follow">
 
     <!-- Google Search Console Verification -->
-    <meta name="google-site-verification"
-          content="D07fI1-LAL-J-J1HRcfwWt1qley3RjHlHlz8ll8Fhas">
+    <meta name="google-site-verification" content="D07fI1-LAL-J-J1HRcfwWt1qley3RjHlHlz8ll8Fhas">
 
-    <link rel="canonical"
-          href="https://abhishekwebstudio.github.io/Qyes-Concepts-event-decoration-/">
+    <link rel="canonical" href="https://abhishekwebstudio.github.io/Qyes-Concepts-event-decoration-/">
 
     <!-- Open Graph -->
-    <meta property="og:title"
-          content="Qyes Concepts | Event Decoration in Delhi & Gurugram">
-
-    <meta property="og:description"
-          content="Professional wedding, birthday, festival, corporate and private event decoration services.">
-
+    <meta property="og:title" content="Qyes Concepts | Event Decoration in Delhi & Gurugram">
+    <meta property="og:description" content="Beautiful event decoration for weddings, birthdays, festivals, corporate events and private parties in Delhi, Gurugram and nearby areas.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abhishekwebstudio.github.io/Qyes-Concepts-event-decoration-/">
 
-    <meta property="og:url"
-          content="https://abhishekwebstudio.github.io/Qyes-Concepts-event-decoration-/">
-
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Qyes Concepts",
+      "description": "Professional event decoration and event planning services in Delhi, Gurugram and nearby areas.",
+      "url": "https://abhishekwebstudio.github.io/Qyes-Concepts-event-decoration-/",
+      "telephone": "+91-9999409645",
+      "email": "qyes28.eventart@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gurgaon Old Railway Road, Kataria Chowk, Victoria Garden",
+        "addressLocality": "Gurugram",
+        "addressRegion": "Haryana",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        "Delhi",
+        "Gurugram",
+        "Nearby Areas"
+      ],
+      "serviceType": [
+        "Birthday Party Decoration",
+        "Wedding Decoration",
+        "Festival Event Decoration",
+        "Corporate Event Decoration",
+        "Private Party Decoration",
+        "Customized Event Decoration"
+      ]
+    }
+    </script>
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -50,275 +72,389 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            color: #222;
-            background: #ffffff;
+            background: #f7fbff;
+            color: #243447;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        /* NAVBAR */
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* =========================
+           FLOATING WATERMARKS
+        ========================== */
+
+        .party-watermark {
+            position: fixed;
+            z-index: 0;
+            pointer-events: none;
+            user-select: none;
+            opacity: 0.08;
+            font-size: 55px;
+            animation: floatParty 8s ease-in-out infinite;
+        }
+
+        .watermark-1 {
+            top: 16%;
+            left: 2%;
+        }
+
+        .watermark-2 {
+            top: 30%;
+            right: 3%;
+            font-size: 65px;
+            animation-delay: 1s;
+        }
+
+        .watermark-3 {
+            top: 52%;
+            left: 4%;
+            animation-delay: 2s;
+        }
+
+        .watermark-4 {
+            top: 70%;
+            right: 5%;
+            font-size: 48px;
+            animation-delay: 3s;
+        }
+
+        .watermark-5 {
+            top: 86%;
+            left: 24%;
+            font-size: 45px;
+            animation-delay: 4s;
+        }
+
+        .watermark-6 {
+            top: 45%;
+            right: 24%;
+            font-size: 42px;
+            animation-delay: 2.5s;
+        }
+
+        @keyframes floatParty {
+            0%, 100% {
+                transform: translateY(0) rotate(-4deg);
+            }
+
+            50% {
+                transform: translateY(-25px) rotate(4deg);
+            }
+        }
+
+        /* =========================
+           NAVBAR
+        ========================== */
 
         header {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255,255,255,0.97);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            background: rgba(255,255,255,0.96);
+            border-bottom: 1px solid #e5eef7;
+            box-shadow: 0 3px 15px rgba(30, 80, 120, 0.07);
         }
 
         nav {
             max-width: 1150px;
             margin: auto;
-            min-height: 72px;
-            padding: 12px 25px;
-
+            min-height: 68px;
+            padding: 12px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 20px;
         }
 
         .logo {
-            font-size: 25px;
+            font-size: 23px;
             font-weight: 800;
-            color: #146c94;
+            color: #1677b8;
+            white-space: nowrap;
         }
 
-        nav ul {
-            list-style: none;
+        .logo span {
+            color: #e89a35;
+        }
+
+        .nav-links {
             display: flex;
             gap: 24px;
+            list-style: none;
         }
 
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
+        .nav-links a {
+            color: #34495e;
+            font-size: 14px;
             font-weight: 600;
         }
 
-        nav ul li a:hover {
-            color: #146c94;
+        .nav-links a:hover {
+            color: #1677b8;
         }
 
-
-        /* HOME */
+        /* =========================
+           HERO
+        ========================== */
 
         .hero {
-            min-height: 88vh;
-            padding: 70px 20px;
-
+            position: relative;
+            z-index: 1;
+            min-height: 650px;
             display: flex;
             align-items: center;
-            justify-content: center;
-
-            text-align: center;
-
             background:
-                radial-gradient(circle at top left, #dff5ff, transparent 35%),
-                radial-gradient(circle at bottom right, #e8f8ff, transparent 35%),
-                linear-gradient(135deg, #f8fdff, #ffffff);
+                radial-gradient(circle at 10% 20%, rgba(174,224,255,0.55), transparent 28%),
+                radial-gradient(circle at 90% 25%, rgba(255,221,177,0.45), transparent 28%),
+                linear-gradient(135deg, #f8fcff, #eef8ff);
+            overflow: hidden;
         }
 
         .hero-content {
-            max-width: 950px;
+            max-width: 1150px;
+            width: 100%;
+            margin: auto;
+            padding: 80px 20px;
+            text-align: center;
         }
 
-        .hero-tag {
+        .hero-label {
             display: inline-block;
-            padding: 8px 18px;
-            margin-bottom: 22px;
-
+            padding: 8px 17px;
             border-radius: 30px;
-
-            background: #e5f7ff;
-            color: #146c94;
-
-            font-weight: bold;
+            background: #e3f4ff;
+            color: #1677b8;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 55px;
-            line-height: 1.15;
-            color: #146c94;
-            margin-bottom: 22px;
+            max-width: 850px;
+            margin: auto;
+            font-size: clamp(38px, 7vw, 72px);
+            line-height: 1.08;
+            color: #173b56;
         }
 
         .hero h1 span {
-            color: #222;
+            color: #1684c7;
         }
 
         .hero p {
             max-width: 760px;
-            margin: auto;
-
-            font-size: 20px;
-            color: #555;
-
-            margin-bottom: 30px;
+            margin: 25px auto;
+            color: #5b7182;
+            font-size: 17px;
         }
 
         .hero-features {
-            margin: 35px auto;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
+            margin: 25px 0;
         }
 
-        .hero-feature {
-            background: white;
-            padding: 10px 17px;
-            border-radius: 25px;
-
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-
+        .feature {
+            background: rgba(255,255,255,0.85);
+            border: 1px solid #d9eaf5;
+            padding: 9px 15px;
+            border-radius: 30px;
+            font-size: 13px;
+            color: #426277;
             font-weight: 600;
-            color: #444;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 13px;
+            margin-top: 30px;
         }
 
         .btn {
             display: inline-block;
-            padding: 14px 28px;
-            margin: 6px;
+            padding: 14px 23px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.25s;
+        }
 
-            border-radius: 30px;
-
-            text-decoration: none;
-            font-weight: bold;
-
-            background: #146c94;
+        .btn-primary {
+            background: #1684c7;
             color: white;
+            box-shadow: 0 7px 20px rgba(22,132,199,0.20);
+        }
 
-            transition: 0.3s;
+        .btn-secondary {
+            background: white;
+            color: #1677b8;
+            border: 1px solid #cfe3f1;
         }
 
         .btn:hover {
             transform: translateY(-2px);
-            opacity: 0.9;
         }
 
-        .btn-whatsapp {
-            background: #25d366;
-        }
-
-
-        /* COMMON */
+        /* =========================
+           GENERAL SECTIONS
+        ========================== */
 
         section {
-            padding: 80px 6%;
+            position: relative;
+            z-index: 1;
+            padding: 75px 20px;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: auto;
         }
 
         .section-heading {
-            max-width: 800px;
-            margin: 0 auto 50px;
             text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-heading small {
+            color: #1684c7;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .section-heading h2 {
-            font-size: 36px;
-            color: #146c94;
-            margin-bottom: 12px;
+            margin-top: 8px;
+            font-size: clamp(28px, 5vw, 42px);
+            color: #193f59;
         }
 
         .section-heading p {
-            color: #666;
-            font-size: 17px;
+            max-width: 700px;
+            margin: 12px auto 0;
+            color: #687d8c;
         }
 
+        /* =========================
+           ABOUT
+        ========================== */
 
-        /* ABOUT */
-
-        .about-content {
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
+        .about {
+            background: white;
         }
 
-        .about-content p {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 18px;
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
         }
 
-
-        /* SERVICES */
-
-        .services-section {
-            background: #f6fbfe;
+        .about-text h3 {
+            font-size: 29px;
+            color: #214b66;
+            margin-bottom: 15px;
         }
 
-        .services-grid {
-            max-width: 1150px;
-            margin: auto;
+        .about-text p {
+            color: #607685;
+            margin-bottom: 14px;
+        }
 
+        .about-box {
+            padding: 35px;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #edf8ff, #fff8ed);
+            border: 1px solid #e0edf5;
+        }
+
+        .about-box strong {
+            display: block;
+            font-size: 21px;
+            color: #1677b8;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           SERVICES
+        ========================== */
+
+        .services {
+            background: #f5faff;
+        }
+
+        .service-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-
-            gap: 22px;
+            gap: 20px;
         }
 
         .service-card {
             background: white;
-            padding: 30px 22px;
-
-            border-radius: 18px;
-
-            text-align: center;
-
-            box-shadow: 0 6px 22px rgba(0,0,0,0.07);
-
-            transition: 0.3s;
+            padding: 28px 23px;
+            border-radius: 17px;
+            border: 1px solid #e1edf5;
+            box-shadow: 0 7px 25px rgba(32,86,120,0.05);
+            transition: 0.25s;
         }
 
         .service-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(32,86,120,0.10);
         }
 
         .service-icon {
-            font-size: 36px;
+            font-size: 35px;
             margin-bottom: 12px;
         }
 
         .service-card h3 {
-            color: #146c94;
-            margin-bottom: 10px;
+            color: #214b66;
+            font-size: 19px;
+            margin-bottom: 8px;
         }
 
         .service-card p {
-            color: #666;
+            color: #718491;
+            font-size: 14px;
         }
 
+        /* =========================
+           GALLERY
+        ========================== */
 
-        /* GALLERY */
-
-        .gallery-section {
-            background: #ffffff;
+        .gallery {
+            background: white;
         }
 
         .gallery-grid {
-            max-width: 1150px;
-            margin: auto;
-
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-
-            gap: 22px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
         }
 
         .gallery-item {
             overflow: hidden;
-            background: white;
-
-            border-radius: 17px;
-
-            box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+            border-radius: 14px;
+            background: #edf5fa;
+            border: 1px solid #e2edf3;
         }
 
         .gallery-item img {
             width: 100%;
-            height: 270px;
-
+            height: 245px;
             object-fit: cover;
-            display: block;
-
             transition: transform 0.4s ease;
         }
 
@@ -327,663 +463,316 @@
         }
 
         .gallery-caption {
-            padding: 14px;
-
+            padding: 11px;
             text-align: center;
-
-            font-weight: bold;
-            color: #146c94;
+            background: white;
+            color: #426277;
+            font-size: 13px;
+            font-weight: 700;
         }
 
+        /* =========================
+           SERVICE AREA
+        ========================== */
 
-        /* SERVICE AREA */
-
-        .area-section {
-            background: #f6fbfe;
-            text-align: center;
+        .area {
+            background: linear-gradient(135deg, #eef8ff, #fff8ef);
         }
 
-        .area-content {
+        .area-box {
             max-width: 850px;
             margin: auto;
-        }
-
-        .area-content p {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 10px;
-        }
-
-
-        /* CONTACT */
-
-        .contact-section {
             text-align: center;
-        }
-
-        .contact-box {
-            max-width: 750px;
-            margin: auto;
-
-            background: #f6fbfe;
-
+            background: rgba(255,255,255,0.85);
             padding: 40px 25px;
-
-            border-radius: 20px;
-
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            border-radius: 22px;
+            border: 1px solid #dfebf3;
         }
 
-        .contact-box p {
-            margin: 12px 0;
+        .area-box h3 {
+            font-size: 27px;
+            color: #214b66;
+            margin-bottom: 12px;
+        }
+
+        .area-box p {
+            color: #637887;
+            margin: 7px 0;
+        }
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 27px 18px;
+            background: #f5faff;
+            border-radius: 16px;
+            border: 1px solid #e0edf5;
+        }
+
+        .contact-card .icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .contact-card h3 {
             font-size: 17px;
+            color: #214b66;
+            margin-bottom: 5px;
         }
 
-        .contact-box a:not(.btn) {
-            color: #146c94;
-            text-decoration: none;
-            font-weight: bold;
+        .contact-card a,
+        .contact-card p {
+            color: #587180;
+            font-size: 14px;
+            word-break: break-word;
         }
 
+        .contact-action {
+            text-align: center;
+            margin-top: 35px;
+        }
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================== */
 
         footer {
-            background: #146c94;
-            color: white;
+            position: relative;
+            z-index: 1;
+            background: #173b56;
+            color: #dcecf6;
             text-align: center;
-            padding: 30px 15px;
+            padding: 28px 20px;
+        }
+
+        footer strong {
+            color: white;
         }
 
         footer p {
-            margin: 5px;
+            margin-top: 7px;
+            font-size: 13px;
         }
 
-
-        /* MOBILE */
+        /* =========================
+           MOBILE
+        ========================== */
 
         @media (max-width: 850px) {
 
+            .nav-links {
+                display: none;
+            }
+
             nav {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            nav ul {
                 justify-content: center;
-                flex-wrap: wrap;
-                gap: 15px;
             }
 
-            .hero h1 {
-                font-size: 42px;
+            .hero {
+                min-height: 600px;
             }
 
-            .services-grid {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
             .gallery-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
+        @media (max-width: 560px) {
 
-        @media (max-width: 550px) {
+            section {
+                padding: 60px 15px;
+            }
 
-            .hero {
-                min-height: 80vh;
-                padding: 55px 18px;
+            .hero-content {
+                padding: 65px 15px;
             }
 
             .hero h1 {
-                font-size: 34px;
+                font-size: 40px;
             }
 
             .hero p {
-                font-size: 17px;
+                font-size: 15px;
             }
 
-            section {
-                padding: 60px 5%;
+            .hero-features {
+                gap: 7px;
             }
 
-            .section-heading h2 {
-                font-size: 29px;
+            .feature {
+                font-size: 12px;
+                padding: 8px 11px;
             }
 
-            .services-grid {
+            .buttons {
+                flex-direction: column;
+                align-items: stretch;
+                max-width: 330px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .btn {
+                text-align: center;
+                width: 100%;
+            }
+
+            .service-grid {
                 grid-template-columns: 1fr;
             }
 
             .gallery-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 9px;
             }
 
             .gallery-item img {
-                height: 260px;
+                height: 170px;
+            }
+
+            .gallery-caption {
+                font-size: 11px;
+                padding: 8px 4px;
+            }
+
+            .about-box {
+                padding: 25px 20px;
+            }
+
+            .party-watermark {
+                font-size: 38px;
+                opacity: 0.06;
             }
         }
-
     </style>
-
 </head>
-
 
 <body>
 
+    <!-- Floating Party Watermarks -->
+    <div class="party-watermark watermark-1">🎈</div>
+    <div class="party-watermark watermark-2">🎂</div>
+    <div class="party-watermark watermark-3">🎈</div>
+    <div class="party-watermark watermark-4">🎉</div>
+    <div class="party-watermark watermark-5">🎈</div>
+    <div class="party-watermark watermark-6">🧁</div>
 
-<!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">Qyes <span>Concepts</span></a>
 
-<header>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
+    <!-- HERO -->
+    <main id="home">
 
-        <div class="logo">
-            Qyes Concepts
-        </div>
+        <section class="hero">
+            <div class="hero-content">
 
-        <ul>
+                <span class="hero-label">
+                    Event Decoration & Planning
+                </span>
 
-            <li>
-                <a href="#home">Home</a>
-            </li>
+                <h1>
+                    Beautiful Events,<br>
+                    <span>Memorable Moments</span>
+                </h1>
 
-            <li>
-                <a href="#about">About</a>
-            </li>
+                <p>
+                    Qyes Concepts provides creative and professional event
+                    decoration for weddings, birthdays, festivals, corporate
+                    events and private celebrations in Delhi, Gurugram and nearby areas.
+                </p>
 
-            <li>
-                <a href="#services">Services</a>
-            </li>
+                <div class="hero-features">
+                    <span class="feature">💍 Weddings</span>
+                    <span class="feature">🎂 Birthdays</span>
+                    <span class="feature">🎉 Festivals</span>
+                    <span class="feature">🏢 Corporate Events</span>
+                    <span class="feature">🥳 Private Parties</span>
+                </div>
 
-            <li>
-                <a href="#gallery">Gallery</a>
-            </li>
+                <div class="buttons">
+                    <a class="btn btn-primary"
+                       href="https://wa.me/919999409645?text=Hello%20Qyes%20Concepts,%20I%20want%20to%20enquire%20about%20event%20decoration."
+                       target="_blank"
+                       rel="noopener">
+                        💬 Enquire on WhatsApp
+                    </a>
 
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+                    <a class="btn btn-secondary" href="#gallery">
+                        View Our Work
+                    </a>
+                </div>
 
-        </ul>
-
-    </nav>
-
-</header>
-
-
-<!-- HOME -->
-
-<section id="home" class="hero">
-
-    <div class="hero-content">
-
-        <div class="hero-tag">
-            ✨ Event Decoration & Planning
-        </div>
-
-        <h1>
-            Beautiful Events,
-            <span>Memorable Moments</span>
-        </h1>
-
-        <p>
-            Make your special occasion unforgettable with
-            creative, elegant and customized event decoration
-            by Qyes Concepts.
-        </p>
-
-        <div class="hero-features">
-
-            <div class="hero-feature">
-                💍 Weddings
             </div>
-
-            <div class="hero-feature">
-                🎂 Birthdays
-            </div>
-
-            <div class="hero-feature">
-                🎉 Festivals
-            </div>
-
-            <div class="hero-feature">
-                🏢 Corporate Events
-            </div>
-
-            <div class="hero-feature">
-                🎊 Private Parties
-            </div>
-
-        </div>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/919999409645"
-           target="_blank">
-            WhatsApp Us
-        </a>
-
-        <a class="btn"
-           href="booking.html">
-            Book Your Event
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-    <div class="section-heading">
-
-        <h2>About Qyes Concepts</h2>
-
-        <p>
-            Creative decoration for moments that deserve
-            to be remembered.
-        </p>
-
-    </div>
-
-    <div class="about-content">
-
-        <p>
-            Qyes Concepts is a professional event decoration
-            service providing creative and customized
-            decoration solutions for different occasions.
-        </p>
-
-        <p>
-            From beautiful wedding setups and birthday
-            celebrations to festival events, corporate
-            functions and private parties, we help create
-            attractive and memorable environments for your
-            special day.
-        </p>
-
-        <p>
-            We serve Delhi, Gurugram and nearby areas with
-            decoration solutions designed according to your
-            event theme, venue and requirements.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- SERVICES -->
-
-<section id="services" class="services-section">
-
-    <div class="section-heading">
-
-        <h2>Our Event Decoration Services</h2>
-
-        <p>
-            Customized decoration for every kind of
-            celebration and special occasion.
-        </p>
-
-    </div>
-
-
-    <div class="services-grid">
-
-
-        <div class="service-card">
-
-            <div class="service-icon">🎂</div>
-
-            <h3>
-                Birthday Parties
-            </h3>
-
-            <p>
-                Creative birthday decorations, themes,
-                backdrops and celebration setups.
-            </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">💍</div>
-
-            <h3>
-                Wedding Decoration
-            </h3>
-
-            <p>
-                Elegant wedding stage, venue and function
-                decoration for beautiful celebrations.
-            </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">🎉</div>
-
-            <h3>
-                Festival Events
-            </h3>
-
-            <p>
-                Attractive decoration setups for festivals,
-                cultural celebrations and special occasions.
-            </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">🏢</div>
-
-            <h3>
-                Corporate Events
-            </h3>
-
-            <p>
-                Professional decoration for corporate
-                functions, office events and gatherings.
-            </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">🎊</div>
-
-            <h3>
-                Private Parties
-            </h3>
-
-            <p>
-                Personalized decoration for private parties,
-                family functions and celebrations.
-            </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">✨</div>
-
-            <h3>
-                Customized Events
-            </h3>
-
-            <p>
-                Customized event decoration according to
-                your theme, ideas and requirements.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- GALLERY -->
-
-<section id="gallery" class="gallery-section">
-
-    <div class="section-heading">
-
-        <h2>
-            Our Event Decoration Gallery
-        </h2>
-
-        <p>
-            Explore our decoration work for weddings,
-            birthdays, private parties, corporate events
-            and other special occasions.
-        </p>
-
-    </div>
-
-
-    <div class="gallery-grid">
-
-
-        <!-- 1 FEATURED -->
-
-        <div class="gallery-item">
-
-            <img src="FB_IMG_1770056393432.jpg"
-                 alt="Featured event decoration by Qyes Concepts"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Featured Event
-            </div>
-
-        </div>
-
-
-        <!-- 2 WEDDING -->
-
-        <div class="gallery-item">
-
-            <img src="FB_IMG_1772078744628.jpg"
-                 alt="Wedding decoration by Qyes Concepts in Delhi"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Wedding Decoration
-            </div>
-
-        </div>
-
-
-        <!-- 3 BIRTHDAY -->
-
-        <div class="gallery-item">
-
-            <img src="FB_IMG_1776345292674.jpg"
-                 alt="Birthday party decoration in Delhi"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Birthday Decoration
-            </div>
-
-        </div>
-
-
-        <!-- 4 WEDDING -->
-
-        <div class="gallery-item">
-
-            <img src="FB_IMG_1781897185635.jpg"
-                 alt="Wedding event decoration in Delhi"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Wedding Decoration
-            </div>
-
-        </div>
-
-
-        <!-- 5 BIRTHDAY -->
-
-        <div class="gallery-item">
-
-            <img src="FB_IMG_1785595466962.jpg"
-                 alt="Birthday decoration by Qyes Concepts"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Birthday Decoration
-            </div>
-
-        </div>
-
-
-        <!-- 6 WEDDING -->
-
-        <div class="gallery-item">
-
-            <img src="FB_IMG_1791037428056.jpg"
-                 alt="Wedding venue decoration by Qyes Concepts"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Wedding Decoration
-            </div>
-
-        </div>
-
-
-        <!-- 7 PRIVATE -->
-
-        <div class="gallery-item">
-
-            <img src="IMG_20260206_092856630_HDR.jpg"
-                 alt="Private party decoration in Delhi"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Private Events
-            </div>
-
-        </div>
-
-
-        <!-- 8 CORPORATE -->
-
-        <div class="gallery-item">
-
-            <img src="IMG_20260301_194331179_HDR.jpg"
-                 alt="Corporate event decoration in Delhi"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Corporate Events
-            </div>
-
-        </div>
-
-
-        <!-- 9 CORPORATE -->
-
-        <div class="gallery-item">
-
-            <img src="IMG_20260301_200928524_HDR.jpg"
-                 alt="Corporate event decoration by Qyes Concepts"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Corporate Events
-            </div>
-
-        </div>
-
-
-        <!-- 10 CORPORATE -->
-
-        <div class="gallery-item">
-
-            <img src="IMG_20260301_201839959_HDR.jpg"
-                 alt="Professional corporate event decoration"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Corporate Events
-            </div>
-
-        </div>
-
-
-        <!-- 11 CORPORATE -->
-
-        <div class="gallery-item">
-
-            <img src="IMG_20260302_231923974_HDR.jpg"
-                 alt="Corporate function decoration in Gurugram"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Corporate Events
-            </div>
-
-        </div>
-
-
-        <!-- 12 PRIVATE -->
-
-        <div class="gallery-item">
-
-            <img src="IMG_20260412_094920575.jpg"
-                 alt="Private event decoration by Qyes Concepts"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Private Events
-            </div>
-
-        </div>
-
-
-        <!-- 13 BIRTHDAY -->
-
-        <div class="gallery-item">
-
-            <img src="IMG_20260802_171236801.jpg"
-                 alt="Birthday decoration in Gurugram"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Birthday Decoration
-            </div>
-
-        </div>
-
-
-        <!-- 14 FEATURED -->
-
-        <div class="gallery-item">
-
-            <img src="IMG_20261005_153830.jpg"
-                 alt="Featured event decoration by Qyes Concepts in Delhi"
-                 loading="lazy">
-
-            <div class="gallery-caption">
-                Featured Event
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- SERVICE AREA -->
-
-<section class="area-section">
-
-    <div class="section-heading">
-
-        <h2>
-            Serving Delhi & Gurugram
-        </h2>
-
-        <p>
-            Professional event decoration services
-            for celebrations across Delhi, Gurugram
-            and nearby areas.
-     
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="container">
+
+                <div class="section-heading">
+                    <small>About Qyes Concepts</small>
+                    <h2>We Make Every Celebration Special</h2>
+                    <p>
+                        Creative decoration, thoughtful planning and beautiful
+                        event setups designed around your occasion.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+                        <h3>Your Event, Our Creativity</h3>
+
+                        <p>
+                            Qyes Concepts is an event decoration service serving
+                            Delhi, Gurugram and nearby areas.
+                        </p>
+
+                        <p>
+                            From intimate birthday celebrations to weddings,
+                            corporate functions and festival events, we create
+                            attractive setups that make your special day memorable.
+                        </p>
+
+                        <p>
+                            We focus on clean decoration, creative themes,
+                            beautiful presentation and a smooth experience
+                            for every event.
+                        </p>

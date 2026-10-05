@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abhishekwebstudio.github.io/Qyes-Concepts-event-decoration-/sitemap.xml

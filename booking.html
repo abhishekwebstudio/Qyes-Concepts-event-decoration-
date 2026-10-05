@@ -1,660 +1,738 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
-
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
-
-<title>Book Your Event | Qyes Concepts</title>
-
-<link
-    rel="stylesheet"
-    href="style.css"
->
-
-<style>
-
-    .booking-page {
-        min-height: 100vh;
-        padding: 75px 7%;
-        background: linear-gradient(
-            135deg,
-            #effaf5,
-            #ffffff,
-            #fffdf5
-        );
-    }
-
-
-    .booking-heading {
-        text-align: center;
-        max-width: 700px;
-        margin: 0 auto 40px;
-    }
-
-
-    .booking-heading span {
-        color: #a8843f;
-        font-size: 13px;
-        font-weight: bold;
-        letter-spacing: 3px;
-    }
-
-
-    .booking-heading h1 {
-        color: #1f5948;
-        font-size: 42px;
-        margin: 8px 0 12px;
-    }
-
-
-    .booking-heading p {
-        color: #66746e;
-        font-size: 17px;
-    }
-
-
-    .booking-card {
-        max-width: 850px;
-        margin: auto;
-        background: rgba(255,255,255,0.98);
-        border: 1px solid #dceee7;
-        border-radius: 24px;
-        padding: 38px;
-        box-shadow:
-            0 18px 50px
-            rgba(38,115,91,0.10);
-    }
-
-
-    .booking-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 25px;
-        margin-bottom: 25px;
-        border-bottom: 1px solid #e3eee9;
-    }
-
-
-    .booking-top h2 {
-        color: #1f5948;
-        font-size: 25px;
-    }
-
-
-    .booking-top p {
-        color: #718078;
-        margin-top: 4px;
-    }
-
-
-    .booking-icon {
-        width: 65px;
-        height: 65px;
-        border-radius: 50%;
-        background: #eaf7f1;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        font-size: 34px;
-    }
-
-
-    .form-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-
-    label {
-        color: #34443d;
-        font-size: 14px;
-        font-weight: bold;
-        display: block;
-        margin-bottom: 8px;
-    }
-
-
-    input,
-    select,
-    textarea {
-        width: 100%;
-        padding: 14px 15px;
-
-        border: 1px solid #cfe5dc;
-        border-radius: 11px;
-
-        background: #fbfefc;
-        color: #34443d;
-
-        font-size: 15px;
-        outline: none;
-
-        font-family: Arial, sans-serif;
-    }
-
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-        border-color: #26735b;
-
-        box-shadow:
-            0 0 0 3px
-            rgba(38,115,91,0.08);
-    }
-
-
-    textarea {
-        height: 125px;
-        resize: vertical;
-    }
-
-
-    .submit-btn {
-        width: 100%;
-
-        border: none;
-        padding: 15px;
-
-        border-radius: 30px;
-
-        background: #26735b;
-        color: white;
-
-        font-size: 16px;
-        font-weight: bold;
-
-        cursor: pointer;
-        margin-top: 5px;
-    }
-
-
-    .submit-btn:hover {
-        background: #1c5a47;
-    }
-
-
-    .booking-note {
-        text-align: center;
-
-        color: #718078;
-
-        font-size: 13px;
-
-        margin-top: 12px;
-    }
-
-
-    .whatsapp-note {
-        margin-top: 18px;
-
-        padding: 13px;
-
-        background: #eaf7f1;
-
-        border-radius: 12px;
-
-        text-align: center;
-
-        color: #1f5948;
-
-        font-size: 14px;
-
-        font-weight: 600;
-    }
-
-
-    /* FINAL QUOTE SECTION */
-
-    .booking-final {
-        margin-top: 30px;
-
-        padding: 30px 20px;
-
-        text-align: center;
-
-        background: #f4faf7;
-
-        border: 1px solid #dceee7;
-
-        border-radius: 18px;
-    }
-
-
-    .booking-final h2 {
-        color: #1f5948;
-
-        font-size: 25px;
-
-        margin-bottom: 12px;
-    }
-
-
-    .booking-final p {
-        color: #66746e;
-
-        max-width: 620px;
-
-        margin: auto;
-
-        font-size: 16px;
-
-        line-height: 1.8;
-
-        font-style: italic;
-    }
-
-
-    @media (max-width: 700px) {
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- BASIC SEO -->
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book Event Decoration in Delhi & Gurugram | Qyes Concepts</title>
+
+    <meta
+        name="description"
+        content="Book birthday, wedding, corporate or private event decoration with Qyes Concepts in Delhi and Gurugram. Send your event requirements directly on WhatsApp."
+    >
+
+    <meta
+        name="keywords"
+        content="book event decoration Delhi, event decoration booking Gurugram, birthday decoration booking, wedding decoration booking, Qyes Concepts"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <!-- CANONICAL -->
+    <link
+        rel="canonical"
+        href="https://abhishekwebstudio.github.io/Qyes-Concepts-event-decoration-/booking.html"
+    >
+
+    <!-- OPEN GRAPH -->
+    <meta
+        property="og:title"
+        content="Book Event Decoration in Delhi & Gurugram | Qyes Concepts"
+    >
+
+    <meta
+        property="og:description"
+        content="Send your event decoration enquiry to Qyes Concepts for birthdays, weddings, corporate events and private parties in Delhi and Gurugram."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:url"
+        content="https://abhishekwebstudio.github.io/Qyes-Concepts-event-decoration-/booking.html"
+    >
+
+    <!-- STYLESHEET -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <style>
 
         .booking-page {
-            padding: 55px 5%;
+            min-height: 100vh;
+            padding: 75px 7%;
+            background: linear-gradient(
+                135deg,
+                #effaf5,
+                #ffffff,
+                #fffdf5
+            );
+        }
+
+
+        .booking-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+
+        .booking-heading span {
+            color: #a8843f;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
         }
 
 
         .booking-heading h1 {
-            font-size: 34px;
+            color: #1f5948;
+            font-size: 42px;
+            margin: 8px 0 12px;
+        }
+
+
+        .booking-heading p {
+            color: #66746e;
+            font-size: 17px;
         }
 
 
         .booking-card {
-            padding: 25px 20px;
-        }
-
-
-        .form-row {
-            grid-template-columns: 1fr;
-            gap: 0;
+            max-width: 850px;
+            margin: auto;
+            background: rgba(255,255,255,0.98);
+            border: 1px solid #dceee7;
+            border-radius: 24px;
+            padding: 38px;
+            box-shadow:
+                0 18px 50px
+                rgba(38,115,91,0.10);
         }
 
 
         .booking-top {
-            gap: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e3eee9;
         }
 
 
         .booking-top h2 {
-            font-size: 22px;
+            color: #1f5948;
+            font-size: 25px;
+        }
+
+
+        .booking-top p {
+            color: #718078;
+            margin-top: 4px;
         }
 
 
         .booking-icon {
-            width: 55px;
-            height: 55px;
-            font-size: 28px;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #eaf7f1;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 34px;
         }
 
-    }
 
-</style>
-
-</head><body><header><div class="logo">
-    Qyes Concepts
-</div>
-
-
-<nav>
-
-    <a href="index.html">
-        Home
-    </a>
-
-    <a href="booking.html">
-        Book Your Event
-    </a>
-
-</nav>
-
-</header><section class="booking-page"><div class="booking-heading">
-
-    <span>
-        QYES CONCEPTS
-    </span>
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
 
 
-    <h1>
-        Book Your Event
-    </h1>
+        .form-group {
+            margin-bottom: 20px;
+        }
 
 
-    <p>
-        Tell us about your event and
-        decoration requirements.
-        Our team will get in touch
-        with you on WhatsApp.
-    </p>
-
-</div>
-
+        label {
+            color: #34443d;
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
 
 
-<div class="booking-card">
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 14px 15px;
+
+            border: 1px solid #cfe5dc;
+            border-radius: 11px;
+
+            background: #fbfefc;
+            color: #34443d;
+
+            font-size: 15px;
+            outline: none;
+
+            font-family: Arial, sans-serif;
+        }
 
 
-    <div class="booking-top">
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #26735b;
 
-        <div>
+            box-shadow:
+                0 0 0 3px
+                rgba(38,115,91,0.08);
+        }
 
-            <h2>
-                Event Details
-            </h2>
+
+        textarea {
+            height: 125px;
+            resize: vertical;
+        }
+
+
+        .submit-btn {
+            width: 100%;
+
+            border: none;
+            padding: 15px;
+
+            border-radius: 30px;
+
+            background: #26735b;
+            color: white;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+
+        .submit-btn:hover {
+            background: #1c5a47;
+        }
+
+
+        .booking-note {
+            text-align: center;
+
+            color: #718078;
+
+            font-size: 13px;
+
+            margin-top: 12px;
+        }
+
+
+        .whatsapp-note {
+            margin-top: 18px;
+
+            padding: 13px;
+
+            background: #eaf7f1;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            color: #1f5948;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+
+        /* FINAL QUOTE SECTION */
+
+        .booking-final {
+            margin-top: 30px;
+
+            padding: 30px 20px;
+
+            text-align: center;
+
+            background: #f4faf7;
+
+            border: 1px solid #dceee7;
+
+            border-radius: 18px;
+        }
+
+
+        .booking-final h2 {
+            color: #1f5948;
+
+            font-size: 25px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .booking-final p {
+            color: #66746e;
+
+            max-width: 620px;
+
+            margin: auto;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            font-style: italic;
+        }
+
+
+        @media (max-width: 700px) {
+
+            .booking-page {
+                padding: 55px 5%;
+            }
+
+
+            .booking-heading h1 {
+                font-size: 34px;
+            }
+
+
+            .booking-card {
+                padding: 25px 20px;
+            }
+
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+
+            .booking-top {
+                gap: 15px;
+            }
+
+
+            .booking-top h2 {
+                font-size: 22px;
+            }
+
+
+            .booking-icon {
+                width: 55px;
+                height: 55px;
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Qyes Concepts
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="booking.html">
+                Book Your Event
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- BOOKING PAGE -->
+
+    <main>
+
+    <section class="booking-page">
+
+        <div class="booking-heading">
+
+            <span>
+                QYES CONCEPTS
+            </span>
+
+
+            <h1>
+                Book Event Decoration in Delhi & Gurugram
+            </h1>
 
 
             <p>
-                Fill in the details below
-                to send your enquiry.
+                Tell us about your birthday, wedding, corporate
+                event or private party and share your decoration
+                requirements with us. Your enquiry will be sent
+                directly on WhatsApp.
             </p>
 
         </div>
 
 
-        <div class="booking-icon">
-            🎈
-        </div>
-
-    </div>
+        <div class="booking-card">
 
 
+            <div class="booking-top">
 
-    <form id="bookingForm">
+                <div>
 
-
-        <div class="form-row">
-
-
-            <div class="form-group">
-
-                <label>
-                    Full Name
-                </label>
+                    <h2>
+                        Event Details
+                    </h2>
 
 
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                >
+                    <p>
+                        Fill in the details below to send
+                        your event decoration enquiry.
+                    </p>
+
+                </div>
+
+
+                <div class="booking-icon">
+                    🎈
+                </div>
 
             </div>
 
 
-
-            <div class="form-group">
-
-                <label>
-                    Phone Number
-                </label>
+            <form id="bookingForm">
 
 
-                <input
-                    type="tel"
-                    id="phone"
-                    placeholder="Enter your phone number"
-                    required
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            autocomplete="tel"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="event">
+                            Event Type
+                        </label>
+
+
+                        <select
+                            id="event"
+                            required
+                        >
+
+                            <option value="">
+                                Select Event
+                            </option>
+
+                            <option>
+                                Birthday Party
+                            </option>
+
+                            <option>
+                                Wedding Decoration
+                            </option>
+
+                            <option>
+                                Corporate Event
+                            </option>
+
+                            <option>
+                                Private Party
+                            </option>
+
+                            <option>
+                                Other Event
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Event Date
+                        </label>
+
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Event Location
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Enter event location"
+                        autocomplete="street-address"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="requirements">
+                        Decoration Requirements
+                    </label>
+
+
+                    <textarea
+                        id="requirements"
+                        placeholder="Tell us what decoration you are looking for..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn"
                 >
+                    Send Enquiry on WhatsApp →
+                </button>
+
+
+                <div class="booking-note">
+                    Your enquiry will open directly in WhatsApp.
+                </div>
+
+
+                <div class="whatsapp-note">
+                    📱 WhatsApp: 9999409645
+                </div>
+
+
+            </form>
+
+
+            <div class="booking-final">
+
+                <h2>
+                    Let’s Plan Your Perfect Event
+                </h2>
+
+
+                <p>
+                    “Every celebration deserves a beautiful
+                    setting, and every moment deserves
+                    to be remembered.”
+                </p>
 
             </div>
 
-        </div>
-
-
-
-        <div class="form-row">
-
-
-            <div class="form-group">
-
-                <label>
-                    Event Type
-                </label>
-
-
-                <select
-                    id="event"
-                    required
-                >
-
-                    <option value="">
-                        Select Event
-                    </option>
-
-                    <option>
-                        Birthday Party
-                    </option>
-
-                    <option>
-                        Wedding Decoration
-                    </option>
-
-                    <option>
-                        Corporate Event
-                    </option>
-
-                    <option>
-                        Private Party
-                    </option>
-
-                    <option>
-                        Other Event
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <div class="form-group">
-
-                <label>
-                    Event Date
-                </label>
-
-
-                <input
-                    type="date"
-                    id="date"
-                    required
-                >
-
-            </div>
 
         </div>
 
+    </section>
+
+    </main>
 
 
-        <div class="form-group">
+    <!-- FOOTER -->
 
-            <label>
-                Event Location
-            </label>
-
-
-            <input
-                type="text"
-                id="location"
-                placeholder="Enter event location"
-                required
-            >
-
-        </div>
-
-
-
-        <div class="form-group">
-
-            <label>
-                Decoration Requirements
-            </label>
-
-
-            <textarea
-                id="requirements"
-                placeholder="Tell us what decoration you are looking for..."
-            ></textarea>
-
-        </div>
-
-
-
-        <button
-            type="submit"
-            class="submit-btn"
-        >
-            Send Enquiry on WhatsApp →
-        </button>
-
-
-
-        <div class="booking-note">
-            Your enquiry will open directly in WhatsApp.
-        </div>
-
-
-
-        <div class="whatsapp-note">
-            📱 WhatsApp: 9999409645
-        </div>
-
-
-    </form>
-
-
-
-    <div class="booking-final">
-
-        <h2>
-            Let’s Plan Your Perfect Event
-        </h2>
-
+    <footer>
 
         <p>
-            “Every celebration deserves a beautiful
-            setting, and every moment deserves
-            to be remembered.”
+            © 2026 Qyes Concepts |
+            Event Decoration in Delhi & Gurugram
         </p>
 
-    </div>
+    </footer>
 
 
-</div>
+    <!-- WHATSAPP ENQUIRY SCRIPT -->
 
-</section><footer><p>
-    © 2026 Qyes Concepts |
-    Event Decoration
-</p>
+    <script>
 
-</footer><script>
-
-const form =
-    document.getElementById("bookingForm");
+        const form =
+            document.getElementById("bookingForm");
 
 
-form.addEventListener(
-    "submit",
-    function(event) {
+        form.addEventListener(
+            "submit",
+            function(event) {
 
-        event.preventDefault();
-
-
-        const name =
-            document
-            .getElementById("name")
-            .value
-            .trim();
+                event.preventDefault();
 
 
-        const phone =
-            document
-            .getElementById("phone")
-            .value
-            .trim();
+                const name =
+                    document
+                    .getElementById("name")
+                    .value
+                    .trim();
 
 
-        const eventType =
-            document
-            .getElementById("event")
-            .value;
+                const phone =
+                    document
+                    .getElementById("phone")
+                    .value
+                    .trim();
 
 
-        const date =
-            document
-            .getElementById("date")
-            .value;
+                const eventType =
+                    document
+                    .getElementById("event")
+                    .value;
 
 
-        const location =
-            document
-            .getElementById("location")
-            .value
-            .trim();
+                const date =
+                    document
+                    .getElementById("date")
+                    .value;
 
 
-        const requirements =
-            document
-            .getElementById("requirements")
-            .value
-            .trim();
+                const location =
+                    document
+                    .getElementById("location")
+                    .value
+                    .trim();
 
 
-        const whatsappMessage =
-
-            "🎈 *QYES CONCEPTS - NEW EVENT ENQUIRY*" +
-            "\n\n" +
-
-            "👤 *Name:* " +
-            name +
-            "\n\n" +
-
-            "📞 *Phone:* " +
-            phone +
-            "\n\n" +
-
-            "🎉 *Event:* " +
-            eventType +
-            "\n\n" +
-
-            "📅 *Event Date:* " +
-            date +
-            "\n\n" +
-
-            "📍 *Location:* " +
-            location +
-            "\n\n" +
-
-            "✨ *Requirements:* " +
-            (
-                requirements ||
-                "Not specified"
-            );
+                const requirements =
+                    document
+                    .getElementById("requirements")
+                    .value
+                    .trim();
 
 
-        const whatsappURL =
+                const whatsappMessage =
 
-            "https://wa.me/919999409645?text=" +
+                    "🎈 *QYES CONCEPTS - NEW EVENT ENQUIRY*" +
+                    "\n\n" +
 
-            encodeURIComponent(
-                whatsappMessage
-            );
+                    "👤 *Name:* " +
+                    name +
+                    "\n\n" +
+
+                    "📞 *Phone:* " +
+                    phone +
+                    "\n\n" +
+
+                    "🎉 *Event:* " +
+                    eventType +
+                    "\n\n" +
+
+                    "📅 *Event Date:* " +
+                    date +
+                    "\n\n" +
+
+                    "📍 *Location:* " +
+                    location +
+                    "\n\n" +
+
+                    "✨ *Requirements:* " +
+                    (
+                        requirements ||
+                        "Not specified"
+                    );
 
 
-        window.open(
-            whatsappURL,
-            "_blank"
+                const whatsappURL =
+
+                    "https://wa.me/919999409645?text=" +
+
+                    encodeURIComponent(
+                        whatsappMessage
+                    );
+
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
+                );
+
+            }
         );
 
-    }
-);
+    </script>
 
-</script></body></html>
+</body>
+
+</html>
